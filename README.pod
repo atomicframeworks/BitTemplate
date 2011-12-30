@@ -16,11 +16,11 @@ BitTemplate adheres to strict standards to allow for smooth cross browser suppor
 <b>Features</b>:
 <br />
 <blockquote>
-Graceful Degradation:  The rich CSS3 will fallback cleanly for browsers that do not support it while still looking beautiful. <br/><br/>
-Multi-browser Support:  BitTemplate looks amazing in Google Chrome, Mozilla Firefox, Internet Explorer, and Opera. <br/><br/>
-Pixel Perfection:  The layout is nearly identical to the image provided by the client. Please see clientRequest.png <br/><br/>
-Fluid Design: The layout looks great at any resolution or zoom level. The fluidity also lends itself excellently to displaying on tablets & mobile devices. <br/><br/>
-jQuery Goodness:  Elegant jQuery to enhance the feel of the page, notably the slideshow, e-mail input, submit button.
+<strong>Graceful Degradation:</strong>  The rich CSS3 will fallback cleanly for browsers that do not support it while still looking beautiful. <br/><br/>
+<strong>Multi-browser Support:</strong>  BitTemplate looks amazing in Google Chrome, Mozilla Firefox, Internet Explorer, and Opera. <br/><br/>
+<strong>Pixel Perfection:</strong>  The layout is nearly identical to the image provided by the client. Please see clientRequest.png <br/><br/>
+<strong>Fluid Design:</strong> The layout looks great at any resolution or zoom level. The fluidity also lends itself excellently to displaying on tablets & mobile devices. <br/><br/>
+<strong>jQuery Goodness:  Elegant jQuery to enhance the feel of the page, notably the slideshow, e-mail input, submit button.
 </blockquote>
 
 =end html
