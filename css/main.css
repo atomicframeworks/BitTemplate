@@ -1,0 +1,365 @@
+
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+   overflow: auto;
+   /* Min height - enough height for content*/
+	min-height: 752px;
+}
+
+
+/* General Body CSS */
+body {
+   	font-family: Helvetica, Arial, "Lucida Grande", Sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #cccccc;
+	overflow: auto;
+/* padding for .content used in liquid layout
+	padding-left:10%;
+	padding-right:10%;
+*/
+}
+
+/* Page Header */
+.header {
+	height: 48px;
+	
+	font-size: 14px;
+
+	/* Position header for page */
+	position:absolute;
+	width:100%;
+	left:0px;
+	/* #000 backgound color fallback */
+	background: #000000;
+	/* Gradient for background*/
+	background-color: rgb(133,133,133); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(133,133,133,1) 0%, rgba(13,13,13,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(133,133,133,1)), color-stop(100%,rgba(13,13,13,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(133,133,133,1) 0%,rgba(13,13,13,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(133,133,133,1) 0%,rgba(13,13,13,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(133,133,133,1) 0%,rgba(13,13,13,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(133,133,133,1) 0%,rgba(13,13,13,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#0d0d0d',GradientType=0 ); /* IE6-9 */
+	/* GradientType=0 vertical , horizontal is 1 */
+}
+
+/* Logo in Header */
+.headerIcon {
+    position: relative;
+    right: 5px;
+    top: 7px;
+    /* Position icon in .header */
+    padding-left: 110px;
+    /* Prevent IE borders */
+    border: 0 none;
+    
+}
+
+/* Blue Ribbon */
+.ribbon {
+	background-color: #00aef0;	
+	/* Position at top of page */
+	top:48px;
+	height: 28px;
+	/* Position ribbon for page */
+	position:absolute;
+	/* 10% more for margins */
+	width:100%;
+	left:0px;
+	/* lowest layer */
+	z-index: -1;
+
+}
+
+/* Top Blue Ribbon */
+.topRibbon {
+	background-color: #00aef0;
+	height: 30px;
+	padding-right:55px;
+
+	/* Position topRibbon over lower .ribbon*/
+    
+    /* top padding on columns */
+    margin-top: 48px;
+
+	/* Offset vertical shadow 5px to clear bottom of ribbon */
+	box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Nav Menu in the topRibbon */
+.ribbonMenu {
+	float:right;
+	/* Set line height for offset */
+	line-height: 30px;
+}
+
+/* Links in .ribbonMenu */
+.ribbonMenu a {
+	font-size:12px;
+	font-weight: bold;
+	color: #ffffff ;
+	padding: 4px 5px 2px 5px;
+}
+
+/* Hover link in .ribbonMenu */
+.ribbonMenu a:hover {
+	color:#00aef0;
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+/* Selected / active link in .ribbonMenu */
+.ribbonMenu .activeMenu {
+	color:#00aef0;
+	background-color: #ffffff;
+	border-radius: 4px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+/* General link rules */
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* Main Content Container */
+.content {
+	background-color: #ffffff;
+	/* 960px   80% content 20% padding */
+	/* %'s work well for smaller screens */
+	width: 100%;
+	/* Fill the height - remove for static */
+	height: 100%;
+	min-height: 752px;
+	
+	/* Pad for header */
+	border-top: 48px;
+		
+	/* shadows on content */
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    
+    /* center */
+    margin-left: auto;
+	margin-right:auto;
+		
+	/* Max / Min size of content - Disable to allow fluid layout*/
+	max-width:960px;
+	min-width:960px;
+}
+
+/* Clear Fix on .content */
+
+/* For modern browsers */
+.content:before,
+.content:after {
+    content:"";
+    display:table;
+}
+.content:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.content {
+    zoom:1;
+}
+
+/* Left Column of .content*/
+.content .leftColumn {
+	float:left;	
+	padding-left:38px;
+	padding-top: 25px;
+	color: #cccccc;
+	/* Min height - prevent flicker on image change for columns when in single row */
+	min-height: 400px;
+	/* Min width - prevent flicker on image change */
+	min-width: 535px;
+}
+
+/* slideShow Nav container - unordered list */
+.leftColumn ul{
+	/* center */
+	padding-left: 45%;
+	margin-top:0px;
+	color:#999999;
+	cursor: pointer;
+	/* Max image size */
+	max-height: 515px;
+	max-width: 344px;
+}
+
+/* slideShow Nav buttons - list items */
+.leftColumn li{
+	float:left;
+	margin-left:20px;
+	font-size: 20px;
+	margin-left:7%;
+}
+
+/* slideShow Nav Active button */
+.leftColumn li.active{
+	color:#666666;
+}
+
+/* slideShow Image in .leftColumn  */
+.leftColumn .slideShow {
+	border:10px solid white;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Right Column of .content*/
+.rightColumn {
+	float: left;
+    padding-top: 7px;
+	padding-left: 40px;
+}
+
+/* Article text in .rightColumn*/
+.rightColumn .article {
+	color:#000000;
+}
+
+/* Header in .rightColumn Article*/        
+.rightColumn .article h1 {
+	font-size: 36px;
+	font-weight: normal;
+	margin-bottom:7px;
+	margin-left:-5px;	
+}
+
+/* Paragraphs in .rightColumn Article */
+.rightColumn .article p {
+	font-family: "Georgia", Helvetica, Arial, "Lucida Grande", Sans-serif;
+	font-size: 14px;
+	color:#707070;
+	line-height: 21px;
+	text-align: left;
+	
+	width:295px;
+}
+
+/* Post Date in .rightColumn Article */
+.rightColumn .article .postDate{
+	color:#707070;
+	font-size: 12px;
+	padding-bottom: 2px;
+	/* slightly left offset */
+	margin-left: -8px;
+}
+
+/* Post Date Icon in .rightColumn Article */
+.rightColumn .article .postDate img{
+	/* align clock image with bottom of date */
+	vertical-align: text-bottom;
+	margin-left: 5px;
+	padding-right: 5px;
+}
+
+.footer {
+	/* Position the footer above content */
+	margin-top: -100px;
+	left: 0px;
+	height: 100px;
+	/* Footer Gradient */
+	background: #000000;
+	background: rgb(0,0,0); /* Old browsers */
+	background: rgba(0,0,0,.4);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	filter: alpha(opacity = 40);
+
+	/* GradientType=0 vertical , horizontal is 1 */
+    position: absolute;
+    width: 100%
+}
+
+/* Form position in .footer */
+.footer form {
+	/* % works better here for IE degredation */
+	margin-left: 32%;
+	padding-top: 35px;
+}
+
+/* Form general rules in .footer */
+.footer form input {
+    /* Set all inputs to same height */
+	height: 40px;
+    
+    /* Text */
+    font-weight: bold;
+	
+	/* Borders */
+	border-radius: 10px;
+	border: 2px solid #00aeef;
+	
+	/* Include borders in size */
+	/* Fixes problems when calculating button height */
+	box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;	
+}
+
+/* Email Input Box in .footer form */
+.footer form input.inputBox {
+    /* Position text */
+    padding-bottom: 3px;
+    padding-top: 7px;
+  	/* Text */
+	color: #cccccc;
+	font-size: 18px;
+	background-color: #ffffff;
+	width: 291px;
+	padding: 0 10px;
+	/* IE needs line height */
+	line-height: 40px;
+}
+
+/* Email Input Box Shadows in .footer */
+.footer form input.inputBox {
+	/* Outer shadow , Inner shadow */
+	box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.35), inset 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.35), inset 0px 0px 8px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), inset 0px 0px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Submit button in .footer form */
+.footer form input.button {
+	/* Text */
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #ffffff;
+	/* Borders */
+	border: 2px solid #00aeef;
+	background-color: #00aeef;
+	padding: 0px 18px 0px 20px;
+	/* Align left with email input */
+	position: absolute;
+	margin-left: 15px;
+	/* Gradient for Submit button in .footer form*/
+	/* 100% black to 100% white 25% opacity */
+	background-color: #00aeef;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(0,0,0,0.25))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.25) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.25) 100%); /* IE10+ */
+	background-image: linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(0,0,0,0.25) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00aeef', endColorstr='#ff0082b3',GradientType=0 ); /* IE6-9 */
+}
+
+/* Pressed submit button in .footer form */
+.footer form input.button.pressed{
+	border: 2px solid #0089d0;
+	background-color: #0089d0;
+}
