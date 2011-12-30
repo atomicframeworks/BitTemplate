@@ -9,7 +9,7 @@ BitTemplate was designed and created from scratch using HTML5 and CSS3.  The ini
 2. Factor in graceful degradation and multi-browser support. <br/>
 3. Remain as pixel true to the initial design as possible. <br/><br/>
 
-Needless to say BitTemplate passed all tests with flying colors! <br/>
+Needless to say BitTemplate passed all tests with flying colors! <br/><br/>
 BitTemplate adheres to strict standards to allow for smooth cross browser support & graceful degradation in older browsers.  With performance in mind the use of images in the layout is kept to a bare minimum by using a combination of elegant page structure combined with multiple CSS techniques. 
 <br />
 <br />
