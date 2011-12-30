@@ -5,8 +5,8 @@
 <br />
 <br />
 BitTemplate was designed and created from scratch using HTML5 and CSS3.  The initial layout was provided by a client, as a PSD file, with three special requests. <br/><br/>
-1. I keep images and file sizes to a minimum. <br/>
-2. Factor in graceful degradation, multi-browser support. <br/>
+1. Keep images and file sizes to a minimum. <br/>
+2. Factor in graceful degradation and multi-browser support. <br/>
 3. Remain as pixel true to the initial design as possible. <br/><br/>
 
 Needless to say BitTemplate passed all tests with flying colors! <br/>
