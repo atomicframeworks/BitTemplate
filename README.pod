@@ -1,10 +1,10 @@
 
 =begin html
 
-<h1> BitTemplate - An HTML5 & CSS3 template </h1>
+<h1> BitTemplate - An HTML5 & CSS3 template with some jQuery spice</h1>
 <br />
 <br />
-BitTemplate was designed and created from scratch using HTML5 and CSS3.  The initial layout was provided by a client, as a PSD file, with three special requests. 1. I keep images and file sizes to a minimum. 2. Factor in graceful degradation, multi-browser support. 3. Remain as pixel true to the initial design as possible.  Needless to say BitTemplate passed these tests with flying colors. BitTemplate adheres to strict standards to allow for smooth cross browser support & graceful degradation in older browsers.  With performance in mind BitTemplates usage of images in layout is kept to a bare minimum by using a combination of elegant page structure and multiple CSS techniques. 
+BitTemplate was designed and created from scratch using HTML5 and CSS3.  The initial layout was provided by a client, as a PSD file, with three special requests. 1. I keep images and file sizes to a minimum. 2. Factor in graceful degradation, multi-browser support. 3. Remain as pixel true to the initial design as possible.  Needless to say BitTemplate passed all tests with flying colors. BitTemplate adheres to strict standards to allow for smooth cross browser support & graceful degradation in older browsers.  With performance in mind BitTemplates usage of images in layout is kept to a bare minimum by using a combination of elegant page structure and multiple CSS techniques. 
 <br />
 <br />
 <b>Features</b>:
